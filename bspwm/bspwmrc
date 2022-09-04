@@ -43,6 +43,9 @@ xsetroot -cursor_name left_ptr
 # Polybar autostart
 $HOME/.config/polybar/launch.sh
 
+#picom autostart
+picom -b --experimental-backends &
+
 # Start mpd
 #exec mpd &
 
