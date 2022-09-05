@@ -1,7 +1,8 @@
-----------------------
+--------------------------------------------------------------------------
 --Main conkyrc
 --by @atmozki
-----------------------
+--!NEED SIGNERICA (https://www.dafont.com/signerica.font) AND IOSEVKA TERM
+--------------------------------------------------------------------------
 conky.config = {
 
 	--Various settings
