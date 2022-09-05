@@ -43,11 +43,14 @@ xsetroot -cursor_name left_ptr
 # Polybar autostart
 $HOME/.config/polybar/launch.sh
 
-#picom autostart
+# Picom autostart
 picom -b --experimental-backends &
 
-#start conky
+# Start conky
 conky -c $HOME/.config/conky/main &
+
+# Start barrier
+barrier &
 
 # Start mpd
 # exec mpd &
