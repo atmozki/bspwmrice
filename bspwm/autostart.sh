@@ -21,21 +21,16 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 # Xrandr config
 
 if [[ $(xrandr --query | grep 'HDMI-1 connected') ]]; then
-   xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal --output HDMI-1 --mode 1920x1080 --rotate normal --right-of eDP-1
-fi
-
-
-if [[ $(xrandr --query | grep 'HDMI-1 connected') ]]; then
-   xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal --output HDMI-1 --mode 1920x1080 --rotate normal --right-of eDP-1
+   xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off
    elif [[ $(xrandr --query | grep 'primary') ]]; then
-   xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal
+   xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off
 fi
 
 
 # Autostart-----------------------------------------------------------------------#
 
 # Kill if already running
-killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager polybar
+killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager polybar barrier
 
 # Lauch xsettingsd daemon
 xsettingsd --config="$BSPDIR"/xsettingsd &
@@ -65,7 +60,7 @@ $HOME/.config/polybar/launch.sh
 picom -b --experimental-backends &
 
 # Start conky
-conky -c $HOME/.config/conky/main &
+conky -c $HOME/.config/conky/main
 
 # Start barrier
 barrier &
@@ -83,4 +78,4 @@ barrier &
 ## Wallpapers ---------------------------------------------------------------#
 
 ## Get the wallpaper
-feh --bg-fill --randomize ~/Pictures/walls/
+feh --bg-fill --randomize ~/Pictures/Walls/Desktop/
