@@ -149,6 +149,7 @@ alias vi='nvim'
 alias ping='ping -c 5' #Ping - stops after 5 pings
 alias redo='sudo $(fc -ln -1)' #Redo previous command or double escape key
 alias rc='conky -c $HOME/.config/conky/main' #Reapply my conky
+alias yeet='sudo pacman -Scc' #Remove all packages (whether they are installed or uninstalled) from the cache
 
 #list
 alias ls='ls --color=auto'
