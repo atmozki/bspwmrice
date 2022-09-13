@@ -9,4 +9,18 @@ super + Return
 # Terminal Kitty(Float)
 super + shift + Return
 
+# Terminal Ranger
+super + r
+	kitty -e --class ranger ranger
 
+# Brighness control
+XF86MonBrightness{Up,Down}
+	brightness{ --inc, --dec}
+	
+# Volume control
+XF86Audio{RaiseVolume,LowerVolume}
+	volume{ --inc, --dec}
+
+# Volume mute
+XF86AudioMute
+	volume --toggle
