@@ -24,3 +24,14 @@ XF86Audio{RaiseVolume,LowerVolume}
 # Volume mute
 XF86AudioMute
 	volume --toggle
+
+
+##------------------- Applications --------------------##
+
+# Launch Apps
+super + {f,w,e}
+	{thunar,brave,code}
+
+# Terminal Apps
+super + {v,r,h}
+	kitty -e --class {vim,ranger ranger,htop}
