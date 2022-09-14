@@ -7,7 +7,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' } "NerdTree - File Explorer
 Plug 'vim-airline/vim-airline', " Bottom Status bar
-
+Plug 'junegunn/fzf.vim' " Fuzzy Search 
 
 call plug#end()
 
