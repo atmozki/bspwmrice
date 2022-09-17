@@ -65,6 +65,9 @@ conky -c $HOME/.config/conky/main
 # Start barrier
 barrier &
 
+# Start Doom Emacs
+emacs --daemon &
+
 # Start mpd
 # exec mpd &
 
