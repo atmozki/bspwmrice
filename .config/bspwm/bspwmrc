@@ -81,9 +81,9 @@ for i in ${files[@]}; do
    bspc rule -a $i desktop='^3' follow=on focus=on; done
 
 ## 4 > code (always open editors on workspace-4)
-declare -a code=(Geany code-oss Code)
+declare -a code=(Geany Emacs code-oss Code)
 for i in ${code[@]}; do
-   bspc rule -a $i desktop='^4' follow=on focus=on; done
+   bspc rule -a $i desktop='^4' follow=on focus=on state=tiled; done
 
 ## 5 > office and docs (always open office/doc apps on workspace-5)
 declare -a office=(Gucharmap Atril Evince \
