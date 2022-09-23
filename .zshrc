@@ -83,7 +83,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions web-search zsh-interactive-cd zsh-navigation-tools sudo)
+plugins=(git zsh-autosuggestions web-search zsh-interactive-cd zsh-navigation-tools sudo z aliases)
 
 if [ -f $ZSH/oh-my-zsh.sh ]; then
   source $ZSH/oh-my-zsh.sh
@@ -178,6 +178,7 @@ alias upal='paru -Syu --noconfirm'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+alias G='| grep -i --color=auto'
 
 #readable output
 alias df='df -h'
