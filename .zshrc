@@ -166,6 +166,7 @@ alias yeet='sudo pacman -Scc' #Remove all packages (whether they are installed o
 alias emacs="emacsclient -c -a 'emacs'" #Run emacsclient alias
 alias singlemoni="xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off" #QuickSwitch to single monitor
 alias multimoni="xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off" #QuickSwitch to double monitor
+alias cpc="xclip -sel c < " #Copy file contents to clipboard
 
 #list
 alias ls='ls --color=auto'
@@ -185,10 +186,9 @@ alias upqll='paru -Syu --noconfirm'
 alias upal='paru -Syu --noconfirm'
 
 ## Colorize the grep command output for ease of use (good for log files)##
-alias grep='grep --color=auto'
+alias G='grep --color=auto -i'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-alias G='| grep -i --color=auto'
 
 #readable output
 alias df='df -h'
