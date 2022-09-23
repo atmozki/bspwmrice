@@ -143,6 +143,16 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
+### Function ###
+
+#Git Add/Commit/Push function
+
+function acp () {
+  git add .
+  git commit -m "$*"
+  git push origin main
+}
+
 ### ALIASES ###
 
 #Custom list
