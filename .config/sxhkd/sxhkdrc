@@ -25,13 +25,17 @@ XF86Audio{RaiseVolume,LowerVolume}
 XF86AudioMute
 	volume --toggle
 
+# Lock Screen
+super + l
+    betterlockscreen --lock
+
 
 ##------------------- Applications --------------------##
 
 # Launch Apps
 super + {f,w,e}
-	{thunar,brave,code}
+	{thunar,brave,emacs}
 
 # Terminal Apps
 super + {v,r,h}
-	kitty -e --class {vim,ranger ranger,htop}
+	kitty -e --class {nvim,ranger ranger,htop}
