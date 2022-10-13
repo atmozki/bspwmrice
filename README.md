@@ -16,7 +16,9 @@ This is my Custom [bspwm](https://github.com/baskerville/bspwm) ricing using [Ar
 
 ## Screenshots
 
-<a align='center'><img src="https://i.imgur.com/pdBByBK.png" width="100%"></a>
+<p align='center' height='230px'>
+<a><img height='230px' src='https://i.imgur.com/pdBByBK.png'></a>
+</p>
 
 Wallpaper: [Link](https://github.com/atmozki/Walls.git)
 
