@@ -23,3 +23,9 @@ This is my Custom [bspwm](https://github.com/baskerville/bspwm) ricing using [Ar
 Wallpaper: [Link](https://github.com/atmozki/Walls.git)
 
 ## Installation
+
+## Dependencies
+
+- [bspwm](https://github.com/baskerville/bspwm)
+- [sxhkd](https://github.com/baskerville/sxhkd)
+- [polybar](https://github.com/polybar/polybar)
