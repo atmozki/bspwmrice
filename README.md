@@ -35,3 +35,7 @@ Wallpaper: [Link](https://github.com/atmozki/Walls.git)
 - [neovim](https://github.com/neovim/neovim)
 - [picom](https://github.com/yshui/picom)
 - [feh](https://feh.finalrewind.org/)
+
+## Credits
+
+- [ArcoLinux](https://arcolinux.com)
