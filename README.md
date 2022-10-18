@@ -40,3 +40,4 @@ Wallpaper: [Link](https://github.com/atmozki/Walls.git)
 ## Credits
 
 - [ArcoLinux](https://arcolinux.com)
+- [ArchWiki](https://wiki.archlinux.org)
