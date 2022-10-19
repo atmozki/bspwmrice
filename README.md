@@ -25,6 +25,20 @@ Wallpaper: [Link](https://github.com/atmozki/Walls.git)
 
 ## Installation
 
+1. Clone the repository
+
+```bash
+git clone https://github.com/atmozki/bspwmrice.git
+```
+
+2. Install the dependencies and copy the files
+
+```bash
+cd bspwmrice
+chmod +x install.sh
+./install.sh
+```
+
 ## Dependencies
 
 - [bspwm](https://github.com/baskerville/bspwm)
