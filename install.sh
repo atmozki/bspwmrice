@@ -17,3 +17,15 @@ current_dir=$(pwd)
 echo "---------------------------------Updating system---------------------------------"
 
 sudo pacman -Syu
+
+# Install yay (if not already installed)
+echo "---------------------------------Installing yay---------------------------------"
+
+if  ! command -v yay &> /dev/null
+then
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si
+    cd ..
+    rm -rf yay
+fi
