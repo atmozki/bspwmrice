@@ -29,3 +29,14 @@ then
     cd ..
     rm -rf yay
 fi
+
+# Install packages
+echo "-------------------------------Installing packages-------------------------------"
+
+# Install packages from pacman repo (if not already installed)
+yay -S --noconfirm --needed base-devel xorg xorg-xrandr
+
+# Install packages from AUR repo (if not already installed)
+yay -S --noconfirm --needed bswpwm sxhkd polybar conky kitty neofetch neovim picom feh oh-my-zsh-git oh-my-zsh-powerlevel10k-git 
+
+# Install fonts (if not already installed)
