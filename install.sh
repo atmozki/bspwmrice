@@ -40,3 +40,13 @@ yay -S --noconfirm --needed base-devel xorg xorg-xrandr
 yay -S --noconfirm --needed bswpwm sxhkd polybar conky kitty neofetch neovim picom feh oh-my-zsh-git oh-my-zsh-powerlevel10k-git 
 
 # Install fonts (if not already installed)
+echo "--------------------------------Installing fonts--------------------------------"
+
+yay -S --noconfirm --needed ttf-roboto ttf-roboto-mono ttf-font-awesome otf-font-awesome ttf-meslo-nerd-font-powerlevel10k otf-font-awesome ttc-iosevka
+
+# Oh My Zsh Configuration
+
+# Install zsh-autosuggestions
+echo "----------------------------Installing zsh-autosuggestions-----------------------"
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
