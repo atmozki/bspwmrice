@@ -50,3 +50,9 @@ yay -S --noconfirm --needed ttf-roboto ttf-roboto-mono ttf-font-awesome otf-font
 echo "----------------------------Installing zsh-autosuggestions-----------------------"
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# Install zsh-syntax-highlighting
+
+echo "---------------------------Installing zsh-syntax-highlighting---------------------"
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
