@@ -56,3 +56,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 echo "---------------------------Installing zsh-syntax-highlighting---------------------"
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# Bspwm Configuration
+# Copy config files 
+echo "--------------------------------Copying config files----------------------------"
+
+# Copy bspwm config files
+read -p "Do you want to copy all bspwm config files? [y/n] " -n 1 -r
+echo   # (optional) move to a new line
