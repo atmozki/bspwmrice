@@ -64,3 +64,27 @@ echo "--------------------------------Copying config files----------------------
 # Copy bspwm config files
 read -p "Do you want to copy all bspwm config files? [y/n] " -n 1 -r
 echo   # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Copying bspwm config files..."
+    cp -r .config/bspwm ~/.config/
+    echo "Copying sxhkd config files..."
+    cp -r .config/sxhkd ~/.config/
+    echo "Copying polybar config files..."
+    cp -r .config/polybar ~/.config/
+    echo "Copying kitty config files..."
+    cp -r .config/kitty ~/.config/
+    echo "Copying neovim config files..."
+    cp -r .config/nvim ~/.config/
+    echo "Copying picom config files..."
+    cp -r .config/picom ~/.config/
+    echo "Copying conky config files..."
+    cp -r .config/conky ~/.config/
+    echo "Copying neofetch config files..."
+    cp -r .config/neofetch ~/.config/
+    echo "Copying .zshrc..."
+    cp -r .zshrc ~/
+    echo "Copying .p10k.zsh..."
+    cp -r .p10k.zsh ~/
+    echo "Done!"
+fi
