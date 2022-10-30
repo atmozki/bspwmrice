@@ -88,3 +88,85 @@ then
     cp -r .p10k.zsh ~/
     echo "Done!"
 fi
+if [[ $REPLY =~ ^[Nn]$ ]]
+then
+    echo "What do you want to copy?"
+    echo "1. bspwm"
+    echo "2. sxhkd"
+    echo "3. polybar"
+    echo "4. kitty"
+    echo "5. neovim"
+    echo "6. picom"
+    echo "7. conky"
+    echo "8. neofetch"
+    echo "9. .zshrc"
+    echo "10. .p10k.zsh"
+    echo "11.Exit"
+    read -p "Enter your choice: " -n 1 -r
+    echo   # (optional) move to a new line
+    if [[ $REPLY =~ ^[1]$ ]]
+    then
+        echo "Copying bspwm config files..."
+        cp -r .config/bspwm ~/.config/
+        echo "Done!"
+    fi
+    if [[ $REPLY =~ ^[2]$ ]]
+    then
+        echo "Copying sxhkd config files..."
+        cp -r .config/sxhkd ~/.config/
+        echo "Done!"
+    fi
+    if [[ $REPLY =~ ^[3]$ ]]
+    then
+        echo "Copying polybar config files..."
+        cp -r .config/polybar ~/.config/
+        echo "Done!"
+    fi
+    if [[ $REPLY =~ ^[4]$ ]]
+    then
+        echo "Copying kitty config files..."
+        cp -r .config/kitty ~/.config/
+        echo "Done!"
+    fi
+    if [[ $REPLY =~ ^[5]$ ]]
+    then
+        echo "Copying neovim config files..."
+        cp -r .config/nvim ~/.config/
+        echo "Done!"
+    fi
+    if [[ $REPLY =~ ^[6]$ ]]
+    then
+        echo "Copying picom config files..."
+        cp -r .config/picom ~/.config/
+        echo "Done!"
+    fi
+    if [[ $REPLY =~ ^[7]$ ]]
+    then
+        echo "Copying conky config files..."
+        cp -r .config/conky ~/.config/
+        echo "Done!"
+    fi
+    if [[ $REPLY =~ ^[8]$ ]]
+    then
+        echo "Copying neofetch config files..."
+        cp -r .config/neofetch ~/.config/
+        echo "Done!"
+    fi
+    if [[ $REPLY =~ ^[9]$ ]]
+    then
+        echo "Copying .zshrc..."
+        cp -r .zshrc ~/
+        echo "Done!"
+    fi
+    if [[ $REPLY =~ ^[10]$ ]]
+    then
+        echo "Copying .p10k.zsh..."
+        cp -r .p10k.zsh ~/
+        echo "Done!"
+    fi
+    if [[ $REPLY =~ ^[11]$ ]]
+    then
+        echo "Exiting..."
+        exit
+    fi
+fi
