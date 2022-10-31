@@ -170,3 +170,22 @@ then
         exit
     fi
 fi
+
+# Copy wallpapers
+echo "--------------------------------Copying wallpapers-------------------------------"
+
+read -p "Do you want to copy all wallpapers? [y/n] " -n 1 -r
+echo   # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Cloning wallpapers..."
+    git clone https://github.com/atmozki/Walls.git
+    chmod +x Walls/install.sh
+    ./Walls/install.sh
+fi
+if [[ $REPLY =~ ^[Nn]$ ]]
+then
+    echo "Skipping..."
+fi
+
+# Done
