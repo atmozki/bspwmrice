@@ -189,3 +189,22 @@ then
 fi
 
 # Done
+echo "-----------------------------------Done!-----------------------------------------"
+
+echo "Done! You can now reboot your system and enjoy your new setup!"
+
+# Reboot
+read -p "Do you want to reboot now? [y/n] " -n 1 -r
+echo   # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Rebooting..."
+    reboot
+fi
+if [[ $REPLY =~ ^[Nn]$ ]]
+then
+    echo "Exiting..."
+    exit
+fi
+
+# End of script
