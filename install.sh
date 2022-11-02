@@ -62,7 +62,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 echo "--------------------------------Copying config files----------------------------"
 
 # Copy bspwm config files
-read -p "Do you want to copy all bspwm config files? [y/n] " -n 1 -r
+read -p "Do you want to copy all bspwm config files? [y/n] " -n 1 -r  # -n 1 -r means only one character is required to be entered
 echo   # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
