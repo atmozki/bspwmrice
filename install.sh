@@ -13,7 +13,7 @@ echo "--------------------------------------------------------------------------
 
 current_dir=$(pwd)
 
-# Update system
+# Check & Update system
 echo "---------------------------------Updating system---------------------------------"
 
 sudo pacman -Syu
