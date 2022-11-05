@@ -30,7 +30,7 @@ then
     rm -rf yay
 fi
 
-# Install required packages (imp)
+# Install required packages (important)
 echo "-------------------------------Installing packages-------------------------------"
 
 # Install packages from pacman repo (if not already installed)
