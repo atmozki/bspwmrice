@@ -1,5 +1,5 @@
 #!/bin/bash
-# Install script to install my custom bswpwm rice on Arch Linux/Arcolinux.
+# Install script to install my custom bswpwm rice on Arch Linux/Arcolinux. (BlackTheme)
 echo "---------------------------------------------------------------------------------"
 echo "                                                                                 "
 echo "  ██████╗░░██████╗██████╗░░██╗░░░░░░░██╗███╗░░░███╗ ██████╗░██╗░█████╗░███████╗  "
