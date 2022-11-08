@@ -39,3 +39,9 @@ super + {f,w,e}
 # Terminal Apps
 super + {v,r,h}
 	kitty -e --class {nvim,ranger ranger,htop}
+
+##---------------- Bspwm Keybindings ------------------##
+
+# quit/restart bspwm
+super + ctrl + {q,r}
+	bspc {quit,wm -r}
