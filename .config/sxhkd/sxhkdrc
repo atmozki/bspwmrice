@@ -42,6 +42,6 @@ super + {v,r,h}
 
 ##---------------- Bspwm Keybindings ------------------##
 
-# quit/restart bspwm
+# Quit/restart bspwm
 super + ctrl + {q,r}
 	bspc {quit,wm -r}
