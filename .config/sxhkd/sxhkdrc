@@ -9,7 +9,7 @@ super + Return
 # Terminal Kitty(Float)
 super + shift + Return
 
-# Terminal Ranger
+# Ranger in Kitty
 super + r
 	kitty -e --class ranger ranger
 
