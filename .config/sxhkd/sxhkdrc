@@ -17,7 +17,7 @@ super + r
 XF86MonBrightness{Up,Down}
 	brightness{ --inc, --dec}
 	
-# Volume control
+# Volume Control
 XF86Audio{RaiseVolume,LowerVolume}
 	volume{ --inc, --dec}
 
