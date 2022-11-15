@@ -13,7 +13,7 @@ super + shift + Return
 super + r
 	kitty -e --class ranger ranger
 
-# Brighness control
+# Brighness Control
 XF86MonBrightness{Up,Down}
 	brightness{ --inc, --dec}
 	
