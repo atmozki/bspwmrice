@@ -30,6 +30,12 @@ super + l
     betterlockscreen --lock
 
 
+##---------------- Bspwm Keybindings ------------------##
+
+# Quit/Restart bspwm
+super + ctrl + {q,r}
+	bspc {quit,wm -r}
+
 ##------------------- Applications --------------------##
 
 # Launch Apps
@@ -39,9 +45,3 @@ super + {f,w,e}
 # Terminal Apps
 super + {v,r,h}
 	kitty -e --class {nvim,ranger ranger,htop}
-
-##---------------- Bspwm Keybindings ------------------##
-
-# Quit/Restart bspwm
-super + ctrl + {q,r}
-	bspc {quit,wm -r}
