@@ -2,6 +2,10 @@
 
 ##----------- Keybindings - WM Independent ------------##
 
+# File Preview
+
+
+
 # Terminal Kitty
 super + Return
 	kitty 
