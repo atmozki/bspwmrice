@@ -49,3 +49,6 @@ super + {f,w,e}
 # Terminal Apps
 super + {v,r,h}
 	kitty -e --class {nvim,ranger ranger,htop}
+
+# Launch Apps in Float
+super 
