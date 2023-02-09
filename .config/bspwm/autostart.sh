@@ -57,7 +57,7 @@ xsetroot -cursor_name left_ptr
 $HOME/.config/polybar/launch.sh
 
 # Picom autostart
-picom -b --experimental-backends &
+picom -b &
 
 # Start conky
 conky -c $HOME/.config/conky/main
