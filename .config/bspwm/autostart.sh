@@ -30,7 +30,7 @@ fi
 # Autostart-----------------------------------------------------------------------#
 
 # Kill if already running
-killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager polybar barrier
+killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager polybar conky barrier
 
 # Lauch xsettingsd daemon
 xsettingsd --config="$BSPDIR"/xsettingsd &

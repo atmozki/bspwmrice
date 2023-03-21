@@ -72,8 +72,11 @@ bspc rule -a Alacritty desktop='^1' follow=on focus=on
 bspc rule -a kitty desktop='^1' follow=on focus=on
 
 ## 2 > web (always open web browser on workspace-2)
-bspc rule -a Brave-browser desktop='^2' follow=on focus=on
-bspc rule -a Google-chrome desktop='^2' follow=on focus=on
+##bspc rule -a Brave-browser desktop='^2' follow=on focus=on
+##bspc rule -a Google-chrome desktop='^2' follow=on focus=on
+declare -a browser=(Brave-browser Google-chrome microsoft-edge-dev)
+for i in ${browser[@]}; do
+   bspc rule -a $i desktop='^2' follow=on focus=on
 
 ## 3 > files (always open file manager on workspace-3)
 declare -a files=(Thunar ranger qBittorrent)
