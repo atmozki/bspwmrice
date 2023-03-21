@@ -37,7 +37,7 @@ echo "-------------------------------Installing packages------------------------
 yay -S --noconfirm --needed base-devel xorg xorg-xrandr
 
 # Install packages from AUR repo (if not already installed)
-yay -S --noconfirm --needed bswpwm sxhkd polybar conky kitty neofetch neovim picom feh oh-my-zsh-git oh-my-zsh-powerlevel10k-git 
+yay -S --noconfirm --needed bspwm sxhkd polybar conky kitty neofetch neovim picom feh oh-my-zsh-git zsh-theme-powerlevel10k-git 
 
 # Install fonts (if not already installed)
 echo "--------------------------------Installing fonts--------------------------------"
@@ -99,9 +99,8 @@ then
     echo "6. picom"
     echo "7. conky"
     echo "8. neofetch"
-    echo "9. .zshrc"
-    echo "10. .p10k.zsh"
-    echo "11.Exit"
+    echo "9. .zshrc & .p10k.zsh"
+    echo "0. Exit"
     read -p "Enter your choice: " -n 1 -r
     echo   # (optional) move to a new line
     if [[ $REPLY =~ ^[1]$ ]]
@@ -156,15 +155,11 @@ then
     then
         echo "Copying .zshrc..."
         cp -r .zshrc ~/
-        echo "Done!"
-    fi
-    if [[ $REPLY =~ ^[10]$ ]]
-    then
         echo "Copying .p10k.zsh..."
         cp -r .p10k.zsh ~/
         echo "Done!"
     fi
-    if [[ $REPLY =~ ^[11]$ ]]
+    if [[ $REPLY =~ ^[0]$ ]]
     then
         echo "Exiting..."
         exit
