@@ -34,7 +34,7 @@ fi
 echo "-------------------------------Installing packages-------------------------------"
 
 # Install packages from pacman repo (if not already installed)
-yay -S --noconfirm --needed base-devel xorg xorg-xrandr
+yay -S --noconfirm --needed base-devel xorg xorg-xrandr polkit polkit-gnome
 
 # Install packages from AUR repo (if not already installed)
 yay -S --noconfirm --needed bspwm sxhkd polybar conky kitty neofetch neovim picom feh oh-my-zsh-git zsh-theme-powerlevel10k-git 

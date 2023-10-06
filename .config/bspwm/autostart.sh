@@ -36,8 +36,8 @@ killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager polybar conky ba
 xsettingsd --config="$BSPDIR"/xsettingsd &
 
 # polkit agent
-if [[ ! `pidof xfce-polkit` ]]; then
-	/usr/lib/xfce-polkit/xfce-polkit &
+if [[ ! `pidof polkit-gnome` ]]; then
+	/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 fi
 
 # Lauch keybindings daemon
