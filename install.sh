@@ -59,6 +59,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Bspwm Configuration
 
+echo "-------------------------------Removing config files----------------------------"
 # Removing existing config files
 read -p "Do you want to remove existing config files from Polybar, Conky and Picom(Recommended)? [y/n]" -n 1 -r
 echo # New Line
@@ -199,7 +200,15 @@ fi
 # Done
 echo "-----------------------------------Done!-----------------------------------------"
 
-echo "Done! You can now reboot your system and enjoy your new setup!"
+# Copy Required Fonts
+echo "---------------------------------Copying Font files------------------------------"
+
+read -p "Do you want to copy font required? [y/n] " -n 1 -r
+echo  # New line
+sudo mkdir -p /usr/local/share/fonts
+sudo cp -r fonts /usr/local/share/fonts
+
+echo "Done! You can now reboot your system and enjoy your new setup!(recommended)"
 
 # Reboot
 read -p "Do you want to reboot now? [y/n] " -n 1 -r
