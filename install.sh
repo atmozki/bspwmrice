@@ -58,6 +58,19 @@ echo "---------------------------Installing zsh-syntax-highlighting-------------
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Bspwm Configuration
+
+# Removing existing config files
+read -p "Do you want to remove existing config files from Polybar, Conky and Picom(Recommended)? [y/n]" -n 1 -r
+echo # New Line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Removing Polybar, Conky and Picom config files"
+    rm -rf ~/.config/polybar
+    rm -rf ~/.config/conky
+    rm -rf ~/.config/picom
+    echo "DONE!"
+fi
+
 # Copy config files 
 echo "--------------------------------Copying config files----------------------------"
 
