@@ -55,3 +55,4 @@ chmod +x install.sh
 
 - [ArcoLinux](https://arcolinux.com)
 - [ArchWiki](https://wiki.archlinux.org)
+- [DaFont](https://www.dafont.com/)
