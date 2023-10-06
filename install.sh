@@ -223,6 +223,24 @@ then
     echo "Skipping..."
 fi
 
+#Done
+echo "-----------------------------------Done!-----------------------------------------"
+
+# Change Shell to zsh shell
+read -p "Do you want to change shell to zsh now? [y/n] " -n 1 -r
+echo   # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    chsh -s /bin/zsh
+fi
+if [[ $REPLY =~ ^[Nn]$ ]]
+then
+    echo "Skipping..."
+fi
+
+#Done
+echo "-----------------------------------Done!-----------------------------------------"
+
 echo "Done! You can now reboot your system and enjoy your new setup!(recommended)"
 
 # Reboot
