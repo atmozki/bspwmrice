@@ -37,7 +37,7 @@ echo "-------------------------------Installing packages------------------------
 yay -S --noconfirm --needed base-devel xorg xorg-xrandr polkit polkit-gnome
 
 # Install packages from AUR repo (if not already installed)
-yay -S --noconfirm --needed bspwm sxhkd polybar conky kitty neofetch neovim picom feh oh-my-zsh-git zsh-theme-powerlevel10k-git 
+yay -S --noconfirm --needed bspwm sxhkd polybar conky kitty neofetch neovim picom feh oh-my-zsh-git
 
 # Install fonts (if not already installed)
 echo "--------------------------------Installing fonts--------------------------------"
@@ -49,13 +49,17 @@ yay -S --noconfirm --needed ttf-roboto ttf-roboto-mono ttf-font-awesome otf-font
 # Install zsh-autosuggestions
 echo "----------------------------Installing zsh-autosuggestions-----------------------"
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sudo git clone https://github.com/zsh-users/zsh-autosuggestions /usr/share/oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # Install zsh-syntax-highlighting
-
 echo "---------------------------Installing zsh-syntax-highlighting---------------------"
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/share/oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+# Install Zsh Theme
+echo "-----------------------------Installing zsh-theme--------------------------------"
+
+sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /usr/share/oh-my-zsh/custom/themes/powerlevel10k
 
 # Bspwm Configuration
 
@@ -70,6 +74,10 @@ then
     rm -rf ~/.config/conky
     rm -rf ~/.config/picom
     echo "DONE!"
+fi
+if [[ $REPLY =~ ^[Nn]$ ]]
+then
+    echo "Skipping..."
 fi
 
 # Copy config files 
@@ -203,10 +211,17 @@ echo "-----------------------------------Done!----------------------------------
 # Copy Required Fonts
 echo "---------------------------------Copying Font files------------------------------"
 
-read -p "Do you want to copy font required? [y/n] " -n 1 -r
+read -p "Some extra fonts are required. Do you want to copy font required? [y/n] " -n 1 -r
 echo  # New line
-sudo mkdir -p /usr/local/share/fonts
-sudo cp -r fonts /usr/local/share/fonts
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    sudo mkdir -p /usr/local/share/fonts
+    sudo cp -r fonts /usr/local/share/fonts
+fi
+if [[ $REPLY =~ ^[Nn]$ ]]
+then
+    echo "Skipping..."
+fi
 
 echo "Done! You can now reboot your system and enjoy your new setup!(recommended)"
 
