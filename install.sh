@@ -96,6 +96,8 @@ then
     cp -r .config/polybar ~/.config/
     echo "Copying kitty config files..."
     cp -r .config/kitty ~/.config/
+    echo "Copying rofi config files..."
+    cp -r .config/rofi ~/.config/
     echo "Copying neovim config files..."
     cp -r .config/nvim ~/.config/
     echo "Copying picom config files..."
@@ -115,7 +117,7 @@ then
     echo "What do you want to copy?"
     echo "1. bspwm"
     echo "2. sxhkd"
-    echo "3. polybar"
+    echo "3. polybar & rofi"
     echo "4. kitty"
     echo "5. neovim"
     echo "6. picom"
@@ -141,6 +143,8 @@ then
     then
         echo "Copying polybar config files..."
         cp -r .config/polybar ~/.config/
+	echo "Copying rofi config files..."
+	cp -r .config/rofi ~/.config/
         echo "Done!"
     fi
     if [[ $REPLY =~ ^[4]$ ]]
