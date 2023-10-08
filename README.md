@@ -48,6 +48,7 @@ chmod +x install.sh
 - [kitty](https://github.com/kovidgoyal/kitty)
 - [neofetch](https://github.com/dylanaraps/neofetch)
 - [neovim](https://github.com/neovim/neovim)
+- [rofi](https://github.com/davatorium/rofi)
 - [picom](https://github.com/yshui/picom)
 - [feh](https://feh.finalrewind.org/)
 
