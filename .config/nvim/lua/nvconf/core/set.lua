@@ -1,7 +1,5 @@
 -- Vim Set/Options
 
-vim.g.mapleader = " "
-
 -- Relativenumber
 vim.opt.nu = true
 vim.opt.relativenumber = true

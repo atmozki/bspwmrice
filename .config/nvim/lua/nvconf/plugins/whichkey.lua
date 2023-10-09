@@ -8,24 +8,29 @@ return {
 
     -- Define your keybindings separately
     local keybindings = {
-	    f = {
-		    name = " File",
-		    f = "Find File",
-		    s = "Find Files Using String",
+        f = {
+            name = " File",
+            f = "Find File",
+            s = "Find Files Using String",
+        },
+        n = {
+            name = " NvimTree",
+            n = "NvimTree Toggle",
+            f = "NvinTree Find File",
+        },
+        t = {
+            name = " TreeSitter",
+            p = "Playground Toggle",
+        },
+        v = {
+            name = " Vim",
+            h = "Show Help",
+            d = "Diagnostic",
+            c = { name = " Code", a = "action" },
+            r = { name = " Lsp", r = "references", n = "rename" },
+            w = { name = " Workspace", s = "symbol" },
 	    },
-	    n = {
-		    name = " NvimTree",
-		    n = "NvimTree Toggle",
-		    f = "NvinTree Find File",
-	    },
-	    t = {
-		    name = " TreeSitter",
-		    p = "Playground Toggle",
-	    },
-	    v = {
-		    name = " Vim",
-		    h = "Show Help",
-	    },
+        m = { name = " Make it" },
 	    g = {
 		    name = " Git",
 		    s = "Show Status",

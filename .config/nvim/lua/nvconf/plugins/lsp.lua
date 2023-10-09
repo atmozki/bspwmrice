@@ -23,16 +23,16 @@ return {
 			lsp_zero.on_attach(function(client, bufnr)
 				local opts = {buffer = bufnr, remap = false}
 
-				vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
-				vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
-				vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
+				vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts, { desc = "vim lsp give definition" })
+				vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts, { desc = "vim lsp hovering Description" })
+				vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts, { desc = "vim lsp workspace symbol" })
 				vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
-				vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
-				vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
+				vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts, { desc = "vim diagnostic next" })
+				vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts, { desc = "vim diagnostic prev" })
 				vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
 				vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
 				vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
-				vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+				vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts, { desc = "vim lsp signature help" })
 			end)
 
 			require('mason').setup({})
