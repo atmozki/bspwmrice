@@ -14,7 +14,7 @@ return {
 				project = { enable = false, limit = 8 }, -- Project List Disabled
 				week_header = { enable = true }, -- Header Type Show Weekdays as header
 				footer = { '', 'Nvim huh?', 'Shift :q - to Quit.. LOL' }, -- footer
-			},	
+			},
 		}
 
 		-- Keybindings

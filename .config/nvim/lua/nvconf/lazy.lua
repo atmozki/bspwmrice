@@ -16,3 +16,4 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("nvconf.plugins")
 
+vim.keymap.set("n", "<C-l>", vim.cmd.Lazy )
