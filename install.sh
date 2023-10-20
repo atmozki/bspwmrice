@@ -42,7 +42,7 @@ yay -S --noconfirm --needed bspwm sxhkd polybar conky kitty neofetch neovim pico
 # Install fonts (if not already installed)
 echo "--------------------------------Installing fonts--------------------------------"
 
-yay -S --noconfirm --needed ttf-roboto ttf-roboto-mono ttf-font-awesome otf-font-awesome ttf-meslo-nerd-font-powerlevel10k otf-font-awesome ttc-iosevka
+yay -S --noconfirm --needed ttf-roboto ttf-roboto-mono ttf-font-awesome otf-font-awesome ttf-meslo-nerd-font-powerlevel10k otf-font-awesome ttc-iosevka noto-fonts-emoji
 
 # Oh My Zsh Configuration
 
