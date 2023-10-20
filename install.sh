@@ -104,6 +104,7 @@ then
     cp -r .config/picom ~/.config/
     echo "Copying conky config files..."
     cp -r .config/conky ~/.config/
+    cp -r .config/conky/config ~/.conkyrc
     echo "Copying neofetch config files..."
     cp -r .config/neofetch ~/.config/
     echo "Copying .zshrc..."
