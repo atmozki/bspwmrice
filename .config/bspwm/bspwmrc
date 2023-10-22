@@ -69,7 +69,7 @@ bspc rule -r *:*
 
 ## 1 > terminal (always open terminal on workspace-1)
 bspc rule -a Alacritty desktop='^1' follow=on focus=on
-bspc rule -a kitty desktop='^1' follow=on focus=on
+# bspc rule -a kitty desktop='^1' follow=on focus=on
 
 ## 2 > web (always open web browser on workspace-2)
 declare -a web=(Brave-browser Google-chrome Microsoft-edge-dev)

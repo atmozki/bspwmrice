@@ -60,7 +60,7 @@ $HOME/.config/polybar/launch.sh
 picom -b &
 
 # Start conky
-conky -c $HOME/.config/conky/main
+conky -c $HOME/.config/conky/config
 
 # Start barrier
 barrier &

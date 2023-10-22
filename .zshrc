@@ -109,7 +109,7 @@ fi
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Added Doom Emacs Path
-export PATH="$HOME/.emacs.d/bin:$PATH"
+export PATH="$HOME/.config/emacs/bin:$PATH"
 
 ####   ARCOLINUX SETTINGS   ####
 export PAGER='most'
