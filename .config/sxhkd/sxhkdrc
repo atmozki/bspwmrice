@@ -10,21 +10,22 @@ super + Return
 	kitty 
 
 super + @space
-	rofi -show run
+	rofi -show drun
 
 super + z
-	chromium
+	microsoft-edge-stable
+
+super + x
+ 	archlinux-logout
+
+super + e
+	emacsclient -c -a emacs
 
 super + r
 	kitty -e --class ranger ranger
 
-super + n 
-	kitty -e --class kitten
-
 super + v
-	kitty -e --class nvim
-
-
+	kitty -e --class nvim nvim
 
 # Brighness control
 XF86MonBrightness{Up,Down}
