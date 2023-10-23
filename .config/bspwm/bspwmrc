@@ -29,19 +29,22 @@ ALTWHITE="$color15"
 
 ## Bspwm appearance
 CURRENT_BORDER='1'
-CURRENT_GAP='0'
+CURRENT_GAP='0'      # Border gaps between tiles
 CURRENT_SRATIO="0.6"
 
 ## Configurations --------------------------------------------#
 
 ## Manager Workspaces
 
-if [[ $(xrandr --query | grep 'HDMI-1 connected') ]]; then
-   bspc monitor \^1 -d 'I' 'II' 'III' 'IV'
-   bspc monitor \^2 -d 'V' 'VI' 'VII' 'VIII'
-   elif [[ $(xrandr --query | grep 'primary') ]]; then
-   bspc monitor \^1 -d 'I' 'II' 'III' 'IV' 'V' 'VI' 'VII' 'VIII'
-fi
+# bspc monitor \^1 -d 'I' 'II' 'III' 'IV' 'V' 'VI' 'VII' 'VIII'
+
+# bspc monitor \^1 -d 'TERM' 'WWW' 'FILES' 'CODE' 'DOCS' 'CHAT' 'MEDIA' 'SYS'
+
+bspc monitor \^1 -d 'term' 'www' 'files' 'code' 'docs' 'chat' 'media' 'sys'
+
+# bspc monitor \^1 -d '一' '二' '三' '四' '五' '六' '七' '八'
+
+# bspc monitor \^1 -d '' '' '' '' '' ''
 
 ## Apply bspwm configurations
 bspc config border_width "$CURRENT_BORDER"
