@@ -46,9 +46,13 @@ XF86AudioMute
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
-# close and kill
+# kill node
+super + k
+	bspc node -{k}
+
+# close node
 super + q
-	bspc node -{c,k}
+	bspc node -{c}
 
 # alternate between the tiled and monocle layout
 super + m

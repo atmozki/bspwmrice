@@ -159,13 +159,12 @@ function acp () {
 alias icat='kitty +kitten icat' #view images in kitty
 alias vim='nvim'
 alias vi='nvim'
+alias nv='nvim'
 alias ping='ping -c 5' #Ping - stops after 5 pings
 alias redo='sudo $(fc -ln -1)' #Redo previous command or double escape key
 alias rc='conky -c $HOME/.config/conky/main' #Reapply my conky
 alias yeet='sudo pacman -Scc' #Remove all packages (whether they are installed or uninstalled) from the cache
-alias emacs="emacsclient -c -a 'emacs'" #Run emacsclient alias
-alias singlemoni="xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off" #QuickSwitch to single monitor
-alias multimoni="xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off" #QuickSwitch to double monitor
+alias ec="emacsclient -c -a 'emacs'" #Run emacsclient alias
 alias cpc="xclip -sel c < " #Copy file contents to clipboard
 
 #list
