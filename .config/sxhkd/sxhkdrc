@@ -12,11 +12,11 @@ super + Return
 super + @space
 	rofi -show drun
 
-super + z
-	microsoft-edge-stable
-
 super + x
  	archlinux-logout
+
+super + z
+	microsoft-edge-stable
 
 super + e
 	emacsclient -c -a emacs
