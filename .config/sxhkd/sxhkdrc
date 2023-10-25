@@ -30,7 +30,7 @@ super + v
 # Brighness control
 XF86MonBrightness{Up,Down}
 	xbacklight{ -10, +10}
-
+	
 # Volume control
 XF86Audio{RaiseVolume,LowerVolume}
 	amixer set Master{ 5%+, 5%-}
