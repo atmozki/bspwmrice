@@ -40,6 +40,9 @@ sxhkd -c "$SXHDIR"/sxhkdrc &
 # Start network applet
 nm-applet &
 
+#Start Xfce powermanager
+xfce4-power-manager &
+
 # Fix cursor
 xsetroot -cursor_name left_ptr
 
@@ -50,7 +53,7 @@ $HOME/.config/polybar/launch.sh
 picom -b &
 
 # Start conky
-conky -c $HOME/.config/conky/config
+conky &
 
 # Start Doom Emacs
 emacs --daemon &
@@ -63,8 +66,6 @@ emacs --daemon &
 # run caffeine &
 # run dropbox &
 # run discord &
-
-
 ## Wallpapers ---------------------------------------------------------------#
 
 ## Get the wallpaper
