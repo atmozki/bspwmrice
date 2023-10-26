@@ -132,6 +132,7 @@ export HISTCONTROL=ignoreboth:erasedups
 
 export EDITOR='nvim'
 export VISUAL='nvim'
+export BROWSER='microsoft-edge-stable'
 
 #PS1='[\u@\h \W]\$ '
 
