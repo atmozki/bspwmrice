@@ -56,7 +56,7 @@ picom -b &
 conky &
 
 # Start Doom Emacs
-emacs --daemon &
+/usr/bin/emacs --daemon &
 
 # Start mpd
 # exec mpd &
